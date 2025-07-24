@@ -17,3 +17,8 @@ permissions:
     mode: 444
     type:
       - file
+hooks:
+  ApplicationStart:
+    - location: Scripts/start_application.sh
+      timeout: 300
+      runas: ec2-user
